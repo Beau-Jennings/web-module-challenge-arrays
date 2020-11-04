@@ -1,5 +1,6 @@
 /*REMEMBER TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
+
 /* 👀 This is your data ⬇ */
 const originalFlavors = [
     "Banana Nut Fudge",
@@ -40,18 +41,48 @@ We have an array called originalFlavors with 31 flavors (see above).  In these t
 With all of these changes going on, we don't want to lose track of the actual, original 31 flavors.  So we need to copy the original array!
 
 /*
+// const originalFlavors = [
+//     "Banana Nut Fudge",
+//     "Black Walnut",
+//     "Burgundy Cherry",
+//     "Butterscotch Ribbon",
+//     "Cherry Macaron",
+//     "Chocolate",
+//     "Chocolate Almond",
+//     "Chocolate Chip",
+//     "Chocolate Fudge",
+//     "Chocolate Mint",
+//     "Chocolate Ribbon",
+//     "Coffee",
+//     "Coffee Candy",
+//     "Date Nut",
+//     "Eggnog",
+//     "French Vanilla",
+//     "Green Mint Stick",
+//     "Lemon Crisp",
+//     "Lemon Custard",
+//     "Lemon Sherbet",
+//     "Maple Nut",
+//     "Orange Sherbet",
+//     "Peach",
+//     "Peppermint Fudge Ribbon",
+//     "Peppermint Stick",
+//     "Pineapple Sherbet",
+//     "Raspberry Sherbet",
+//     "Rocky Road",
+//     "Strawberry",
+//     "Vanilla",
+//     "Vanilla Burnt Almond"
+// ]
+
 Use the copy function below to do the following:
     1. An array as an argument
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
-}    
-
-
-
-
+function copy(){
+    return ([...originalFlavors]);
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -64,8 +95,10 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(){
+   if (originalFlavors.length === 31){
+    console.log("true");   
+   }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
