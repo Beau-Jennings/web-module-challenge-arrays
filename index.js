@@ -138,9 +138,9 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(array, removedFlavor){
+function removeFlavorByName(array){
     array.splice(30,1);
-    removedFlavor.shift();
+    array.shift();
     return (array);
 }
 
@@ -166,13 +166,16 @@ Use the filterByWord function below to do the following:
 
 function filterByWord(array, flavors){
     let filteredArray = [];
-    for (let i in array){
-        if (array[i].includes(flavors, "chocolate")){
-            filteredArray.push(flavors);
+    for (let i=0; i <array.length; i++){
+        if (array[i].includes(flavors,)){
+            filteredArray.push(array[i]);
         }
-        return filteredArray;
+        
     }
+    return filteredArray;
 }
+filterByWord(originalFlavors, "chocolate");
+
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
 /* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
